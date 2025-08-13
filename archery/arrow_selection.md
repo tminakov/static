@@ -26,9 +26,9 @@ Its most important characteristics:
 - Measured as the **deflection** (in thousandths of an inch) under a standard load (1.94 lbs at 28" span).
 - **Lower number = stiffer shaft** (e.g., 500 is stiffer than 700).
 - Dynamic spine is affected by:
- - Shaft length — longer = weaker.
- - Point weight — heavier = weaker.
- - String material & brace height — faster release stiffens dynamic spine.
+ -- Shaft length — longer = weaker.
+ -- Point weight — heavier = weaker.
+ -- String material & brace height — faster release stiffens dynamic spine.
 
 #### Material
 - **Carbon**: light, straight, durable, immune to bending, consistent.
@@ -52,11 +52,11 @@ Its most important characteristics:
 **Example Shaft Models**
 | Brand | Model | Spine Options | OD | ID | Notes |
 |-------|-------|--------------|----|----|-------|
-| Victory | VAP V1 | 600, 650, 700 | ~5.6 mm | 4.2 mm | High precision, small OD |
-| Victory | VFT | 600 | ~7.3 mm | ~6.2 mm | High precision, larger OD, 6.6G PI |
-| Fivics | TenPro | 600, 650 | ~6.0 mm | 4.2 mm | Affordable, consistent |
+| Victory | VAP V1 | 600, 650, 700 | ~5.6 mm | 4.2 mm | High precision, small OD, 5.5 GPI |
+| Victory | VFT | 600 | ~7.3 mm | ~6.2 mm | High precision, large OD, 6.6 GPI |
+| Fivics | TenPro | 600, 650 | ~6.0 mm | 4.2 mm | Affordable, consistent, 7.4 GPI |
 | Gas Pro | GS Indoor | 600, 650 | 7.2 mm | 4.2 mm | Large OD, indoor focus |
-| Skylon | Paragon | 600, 650 | ~5.8 mm | 4.2 mm | Good ACE alternative |
+| Skylon | Paragon | 600, 650 | ~4.8 mm | 3.2 mm | Good ACE alternative, small OD, 6.1 GPI |
 
 ---
 
@@ -94,6 +94,68 @@ Its most important characteristics:
 
 \*approximate deflection change from baseline
 
+**Basis Of Data**
+
+- Baseline for reading vendor charts: your **37 lb** on fingers + **~4 lb** barebow adjustment ⇒ **41 lb** “chart draw weight” at **120 gr**, **30.5"**.
+    
+-  **Point-weight effect**: about **1 lb per 10 grains** (heavier point = behaves **weaker**; lighter point = **stiffer**).
+    
+-  **Length effect**: about **5 lb per 1.0"** of arrow length. So **30.0"** is **~2.5 lb stiffer** than **30.5"** (all else equal).
+    
+*   **30.5" table** (baseline):
+    
+    *   120 gr → **41 lb** (neutral)
+        
+    *   110 gr → **40 lb** (slightly stiffer)
+        
+    *   100 gr → **39 lb** (stiffer)
+        
+    *   90 gr → **38 lb** (stiffer)
+        
+    *   80 gr → **37 lb** (noticeably stiffer)
+        
+*   **30.0" table** (0.5" shorter, so stiffer by ~2.5 lb across the board):
+    
+    *   120 gr → **38.5 lb** effective
+        
+    *   110 gr → **37.5 lb**
+        
+    *   100 gr → **36.5 lb**
+        
+    *   90 gr → **35.5 lb**
+        
+    *   80 gr → **34.5 lb**
+        
+
+**How to use this**
+
+*   If your 30.5" / 120 gr build tunes well now, dropping to **100 gr** makes it act about **2 lb stiffer** on the spine chart; **80 gr** is about **4 lb stiffer**.
+    
+*   Shortening to **30.0"** plus lighter points stacks the effect: e.g., **30.0" + 100 gr** behaves ~**4.5 lb stiffer** than the 30.5"/120 gr baseline.
+    
+
+These are **tuning-bench equivalents**, not a physics simulation—but they match common coach practice and should get you very close on first try.
+
+
+
+**Mass & FOC**
+- Total mass rises ~10 gr for each +10 gr point step (as expected).
+- FOC increases by ~0.9–1.0% per +10 gr point.
+-- Example (30.5"): ~10.1% FOC at 80 gr → ~14.3% at 120 gr.
+-- Shortening to 30.0" bumps FOC slightly at the same point weight (same front mass over shorter lever).
+
+**Speed & 18 m drop (simple, same-bow energy model)**
+- Using a practical recurve baseline (180 fps at 300 gr), speed scales with 1/√mass.
+- Going 80 → 120 gr slows the arrow ~6–7 fps and adds roughly 6–7 cm more drop at 18 m.
+-- Example (30.5"):
+--- 80 gr ~ 176 fps, drop ≈ 52.5 cm
+--- 120 gr ~ 169 fps, drop ≈ 59.6 cm
+-- 30.0" versions are a touch lighter/faster and drop slightly less at each point weight.
+
+**How to use this**
+- If you’re chasing a forgiving indoor tune, the 110–120 gr points give you ~13–14% FOC with smoother launch, at the cost of ~7 cm more 18 m drop vs. 80 gr.
+- If you want a flatter sight picture, 80–90 gr gains you a few fps and ~5–7 cm less drop, but dynamic spine stiffens accordingly (as shown earlier).
+
 ---
 
 ## 3. Vanes
@@ -111,6 +173,21 @@ They must balance:
 - **Height**: Higher vanes catch more air, but can cause clearance issues.
 - **Material stiffness**: Stiffer = more responsive; softer = more forgiving.
 - **Profile**: Shield cut, parabolic, low profile — each alters drag.
+
+---
+**7 cm vs 5 cm vs 10 cm**
+
+*   **~5 cm (≈2")**: Fastest, lowest drag; great if your tune is decent. This is the most common indoor “performance” choice (e.g., **AAE WAV 50**).
+    
+*   **~6 cm (≈2.3–2.4")**: A touch more steering/forgiveness with minimal penalty (e.g., **WAV 60**). If you want a little extra stabilization, pick this.
+    
+*   **~7 cm (≈2.75")**: Usually **overkill** for your setup. Adds drag and rear mass, typically costs a few fps and a couple of cm more drop at 18 m with no real scoring gain if your tune is good.
+    
+*   **~10 cm (≈4")**: **Not recommended**—noticeably more drop, louder, more wind sensitivity indoors (!) and more clearance risk. Old-school feel, modern setups don’t need it.
+
+**If you want even more stability (without long vanes)**
+
+Consider 4-fletch of short vanes (e.g., 4 × 50 mm low-profile). It increases steering and forgiveness more efficiently than a single 7–10 cm vane, while keeping height low for clearance. Expect a slight speed/drop penalty; keep glue light.
 
 ---
 
@@ -142,6 +219,13 @@ They must balance:
 | Flex-Fletch | FFP-225 | 57 mm | 8.4 mm | 2.3 gr | High steer |
 | Gas Pro | GP-280 | 60 mm | 7.0 mm | 2.0 gr | Forgiving indoors |
 
+
+**Setup tips**
+
+- **Offset/helical:** ~**1.5–2°** is enough; too much can cause contact.
+- **Orientation:** cock vane out, confirm clearance with powder/lipstick test on the shelf/plunger.
+- **Glue weight:** light and even; excess glue adds rear mass and reduces FOC.
+- **Paper test:** verify no vane contact; adjust nocking point/plunger if needed.
 
 ---
 
