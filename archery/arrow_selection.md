@@ -79,6 +79,24 @@ Its most important characteristics:
 
 ---
 
+**Why Point Weight Changes the Dynamic Spine**
+
+When the bowstring pushes the arrow forward:
+
+- A **heavier point** has more **inertia** — it resists acceleration for a fraction of a millisecond.
+- This causes the shaft to flex **more** around the point end.
+- More flex = **weaker dynamic spine**.
+
+Conversely:
+
+- A **lighter point** accelerates more quickly.
+- The shaft flexes **less** because the mass up front doesn’t “lag” as much.
+- Less flex = **stiffer dynamic spine**.
+
+Think of holding a fishing rod and snapping it forward — the heavier the lure, the more the rod bends.
+
+---
+
 ### 2.2 Practical Data
 
 **Your setup example**:
